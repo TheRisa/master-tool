@@ -19,11 +19,11 @@
   </ion-item>
   <ion-item class="cd">
     <ion-label position="floating">RID</ion-label>
-    <ion-input min="0" type="number" value="0"></ion-input>
+    <ion-input [(ngModel)]="rid" min="0" type="number" value="0"></ion-input>
   </ion-item>
   <ion-item class="input cd">
     <ion-label position="floating">DUR</ion-label>
-    <ion-input min="0" type="number" value="0"></ion-input>
+    <ion-input [(ngModel)]="dur" min="0" type="number" value="0"></ion-input>
   </ion-item>
   <hr class="separator" />
   <ion-item class="input cd">
@@ -47,4 +47,6 @@
     <ion-input [(ngModel)]="cd[4]" min="0" type="number"></ion-input>
   </ion-item>
   <ion-button [disabled]="death" (click)="lowerCD()">Riduci CD</ion-button>
+  <ion-button [disabled]="death" (click)="dealDamage()">Danno</ion-button>
+  <ion-button [disabled]="death" (click)="heal()">Cure</ion-button>
 </div>

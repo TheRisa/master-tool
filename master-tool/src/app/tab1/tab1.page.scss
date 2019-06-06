@@ -1,4 +1,16 @@
+.options {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
 .add {
   margin-top: 2%;
   margin-left: 1%;
+}
+
+.damage {
+  width: 10%;
+  margin-left: 2%;
 }

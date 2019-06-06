@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
   enemys = Array(1).fill(0);
+  damage: number;
+  healing: number;
 
   constructor() {}
 

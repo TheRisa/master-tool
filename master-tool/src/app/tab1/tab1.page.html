@@ -1,4 +1,28 @@
 <ion-content>
-  <app-nemico *ngFor="let n of enemys"></app-nemico>
-  <ion-button (click)="addEnemy()" class="add">Aggiungi nemico</ion-button>
+  <app-nemico
+    [damage]="damage"
+    [healing]="healing"
+    *ngFor="let n of enemys"
+  ></app-nemico>
+  <div class="options">
+    <ion-button (click)="addEnemy()" class="add">Aggiungi nemico</ion-button>
+    <ion-item class="damage">
+      <ion-label position="floating">Danno</ion-label>
+      <ion-input
+        [(ngModel)]="damage"
+        value="0"
+        min="0"
+        type="number"
+      ></ion-input>
+    </ion-item>
+    <ion-item class="damage">
+      <ion-label position="floating">Cure</ion-label>
+      <ion-input
+        [(ngModel)]="healing"
+        value="0"
+        min="0"
+        type="number"
+      ></ion-input>
+    </ion-item>
+  </div>
 </ion-content>
