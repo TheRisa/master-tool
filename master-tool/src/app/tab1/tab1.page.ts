@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  enemys = Array(1).fill(0);
 
   constructor() {}
 
+  addEnemy() {
+    this.enemys.push(0);
+  }
 }

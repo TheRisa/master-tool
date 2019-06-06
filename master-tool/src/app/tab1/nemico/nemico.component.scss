@@ -1,0 +1,42 @@
+.input {
+  margin-right: 2%;
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.name {
+  width: 15%;
+  margin-left: 1%;
+}
+
+.pf {
+  width: 8%;
+}
+
+.cd {
+  width: 5%;
+}
+
+.death {
+  width: 80%;
+  height: 3px;
+  background: red;
+  position: relative;
+  margin: 0;
+  top: 37px;
+  left: 2%;
+  z-index: 100;
+}
+
+.separator {
+  width: 1px;
+  background: blueviolet;
+  height: 35px;
+  margin: 0 2% 0 0;
+}

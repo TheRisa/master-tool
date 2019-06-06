@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  players = Array(1).fill(0);
 
   constructor() {}
 
+  addPlayer() {
+    this.players.push(0);
+  }
 }

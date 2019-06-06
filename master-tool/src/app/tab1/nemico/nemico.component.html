@@ -1,0 +1,50 @@
+<hr *ngIf="death" class="death" />
+<div class="container">
+  <ion-item class="input name">
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item class="input pf">
+    <ion-label position="floating">PF</ion-label>
+    <ion-input
+      [(ngModel)]="pf"
+      (ionChange)="dieEnemy()"
+      min="0"
+      type="number"
+    ></ion-input>
+  </ion-item>
+  <ion-item class="input cd">
+    <ion-label position="floating">PI</ion-label>
+    <ion-input min="0" type="number" value="0"></ion-input>
+  </ion-item>
+  <ion-item class="cd">
+    <ion-label position="floating">RID</ion-label>
+    <ion-input min="0" type="number" value="0"></ion-input>
+  </ion-item>
+  <ion-item class="input cd">
+    <ion-label position="floating">DUR</ion-label>
+    <ion-input min="0" type="number" value="0"></ion-input>
+  </ion-item>
+  <hr class="separator" />
+  <ion-item class="input cd">
+    <ion-label position="floating">cd 1</ion-label>
+    <ion-input [(ngModel)]="cd[0]" min="0" type="number" value="0"></ion-input>
+  </ion-item>
+  <ion-item class="input cd">
+    <ion-label position="floating">cd 2</ion-label>
+    <ion-input [(ngModel)]="cd[1]" min="0" type="number"></ion-input>
+  </ion-item>
+  <ion-item class="input cd">
+    <ion-label position="floating">cd 3</ion-label>
+    <ion-input [(ngModel)]="cd[2]" min="0" type="number"></ion-input>
+  </ion-item>
+  <ion-item class="input cd">
+    <ion-label position="floating">cd 4</ion-label>
+    <ion-input [(ngModel)]="cd[3]" min="0" type="number"></ion-input>
+  </ion-item>
+  <ion-item class="input cd">
+    <ion-label position="floating">cd 5</ion-label>
+    <ion-input [(ngModel)]="cd[4]" min="0" type="number"></ion-input>
+  </ion-item>
+  <ion-button [disabled]="death" (click)="lowerCD()">Riduci CD</ion-button>
+</div>
